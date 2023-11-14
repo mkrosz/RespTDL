@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;500&family=Reem+Kufi+Ink&family=Roboto:ital,wght@0,400;1,100;1,300&display=swap');
+
+* {
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-family: 'Roboto', Times New Roman, Times, serif
+}
+
+body {
+    background-color: #f0f0f0;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    background-color: #37E170;
+    transition: 0.3s all;
+    border-radius: 10px;
+}
+
+#inscreva-se-btn {
+    background-color: #37E170;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover {
+    background-color: #37E170;
+    color: #000;
+}
+
+h1 {
+    font-weight: 200;
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 30px;
+    color: #37E170;
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    color: #000;
+}
+
+.img1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    left: 55rem;
+    top: 12rem;
+    z-index: 1;
+
+}
+
+.img1 {
+    width: 485px;
+}
+
+.img2 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    left: 55rem;
+    top: 12rem;
+    z-index: 2;
+}
+
+.img2 {
+    width: 485px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: #37E170;
+    color: #000;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+input:focus-visible {
+    outline: 2px solid #37E170;
+}
+
+input::placeholder {
+    color: #000000be;
+}
+
+@media only screen and (max-width: 800px) and (prefers-color-scheme: dark) {
+/*Tema Escuro Para Desktop*/
+
+    body {
+        background-color: #222222;
+        color: #000;
+        max-width: 1200px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    a:hover {
+        color: #840ec9;
+    }
+
+    #inscreva-se-btn {
+        background-color: #840ec9;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 18rem;
+    }
+
+    #inscreva-se-btn:hover {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    h2, h3 {
+        color: #f0f0f0;
+        font-size: 50px;
+        line-height: 30px;
+    }
+
+    h1, li {
+        color: #f0f0f0;
+        font-size: 25px;
+        line-height: 15px;
+    }
+
+    p {
+        color: #f0f0f0;
+        width: 32rem;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    ul {
+        padding: 40px;
+        margin: -65px;
+        font-size: 25px;
+    }
+
+    form [type="submit"] {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    input {
+        font-size: 1.4rem;
+        margin: 0.6rem -15px
+    }
+
+    input:focus-visible {
+        outline: 2px solid #7c3df1;
+    }
+
+    a:hover {
+        background-color: #7c3df1;
+    }
+
+    main {
+        margin-top: 33rem;
+    }
+
+    .img2 {
+        left: 3rem;
+        top: 10rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 0rem;
+        z-index: 3;
+    }
+    
+
+    .img1 {
+        left: 3rem;
+        top: 10rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 0rem;
+        z-index: 4;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+/*Tema Claro Para Desktop*/
+
+    h2, h3 {
+        line-height: 45px;
+    }
+
+    
+    h2, h3 {
+        color: #f0f0f0;
+    }
+
+    h1,li {
+        color: #f0f0f0;
+    }
+
+    p {
+        color: #f0f0f0;
+    }
+
+    form [type="submit"] {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    #inscreva-se-btn {
+        background-color: #840ec9;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 15rem;
+    }
+
+    a:hover {
+        color: #840ec9;
+    }
+
+    #inscreva-se-btn {
+        background-color: #840ec9;
+    }
+
+    #inscreva-se-btn:hover {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    form [type="submit"] {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    input:focus-visible {
+        outline: 2px solid #7c3df1;
+    }
+
+    a:hover {
+        background-color: #7c3df1;
+    }
+}
+
+
+@media only screen and (max-width: 600px) and (prefers-color-scheme: light) {
+/*Tema Claro Para Celular*/
+
+    body {
+        background-color: #f0f0f0;
+        color: #fff;
+        max-width: 1200px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+
+    .img2 {
+        left: 3rem;
+        top: 10rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 0rem;
+        z-index: 5;
+    }
+
+    h2, h3 {
+        line-height: 45px;
+    }
+
+    #inscreva-se-btn {
+        background-color: #37E170;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 15rem;
+    }
+
+    #inscreva-se-btn:hover {
+        background-color: #37E170;
+        color: #000;
+    }
+
+    h2, h3 {
+        color: #000;
+    }
+
+    h1,li {
+        color: #000;
+    }
+
+    p {
+        color: #000;
+    }
+
+    form [type="submit"] {
+        background-color: #37E170;
+        color: #000;
+    }
+
+
+    a:hover {
+        color: #37E170;
+    }
+
+    form [type="submit"] {
+        background-color: #37E170;
+        color: #000;
+    }
+
+    input:focus-visible {
+        outline: 2px solid #37E170;
+    }
+
+    a:hover {
+        background-color: #37E170;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+/*Tema Claro Para Celular*/
+
+    body {
+        background-color: #f0f0f0;
+        color: #fff;
+        max-width: 1200px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .img2 {
+        left: 3rem;
+        top: 10rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 0rem;
+        z-index: 5;
+    }
+
+    h2, h3 {
+        line-height: 45px;
+    }
+
+    #inscreva-se-btn {
+        background-color: #37E170;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 15rem;
+    }
+
+    #inscreva-se-btn:hover {
+        background-color: #37E170;
+        color: #000;
+    }
+
+    h2, h3 {
+        color: #000;
+    }
+
+    h1, li {
+        color: #000;
+    }
+
+    p {
+        color: #000;
+    }
+
+    form [type="submit"] {
+        background-color: #37E170;
+        color: #000;
+    }
+
+    a:hover {
+        color: #37E170;
+    }
+
+    form [type="submit"] {
+        background-color: #37E170;
+        color: #000;
+    }
+
+    input:focus-visible {
+        outline: 2px solid #37E170;
+    }
+
+    a:hover {
+        background-color: #37E170;
+    }
+}
+
+@media only screen and (max-width: 400px) and (prefers-color-scheme: dark) {
+/*Tema Escuro Para Celular*/
+
+    body {
+        background-color: #222222;
+        color: #000;
+        max-width: 1200px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .img1{
+        left: 3rem;
+        top: 10rem;
+        width: 30rem;
+        height: 30rem;
+        padding: 0rem;
+        z-index: 6;
+    }
+
+    h2, h3 {
+        line-height: 45px;
+    }
+
+    
+    h2, h3 {
+        color: #f0f0f0;
+    }
+
+    h1,li {
+        color: #f0f0f0;
+    }
+
+    p {
+        color: #f0f0f0;
+    }
+
+    form [type="submit"] {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    #inscreva-se-btn {
+        background-color: #840ec9;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 15rem;
+    }
+
+    a:hover {
+        color: #840ec9;
+    }
+
+    #inscreva-se-btn {
+        background-color: #840ec9;
+    }
+
+    #inscreva-se-btn:hover {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    form [type="submit"] {
+        background-color: #840ec9;
+        color: #f0f0f0;
+    }
+
+    input:focus-visible {
+        outline: 2px solid #7c3df1;
+    }
+
+    a:hover {
+        background-color: #7c3df1;
+    }
+}
